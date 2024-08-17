@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Casper</author>
+      <authoring_tool>Adobe Photoshop</authoring_tool>
+      <comments>Photoshop Build Version - r.384 x6</comments>
+    </contributor>
+    <created>2022-03-10T08:36:37Z</created>
+    <modified>2022-03-10T08:36:37Z</modified>
+    <unit meter="0.001" name="meter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_lights>
+    <light id="Sonsuz_I____k__1" name="Sonsuz_Işık__0">
+      <technique_common>
+        <directional>
+          <color>1 1 1</color>
+        </directional>
+      </technique_common>
+      <extra>
+        <technique profile="MAX3D">
+          <aspect_ratio>1</aspect_ratio>
+          <overshoot>1</overshoot>
+          <decay_type>0</decay_type>
+          <decay_start>10</decay_start>
+          <use_near_attenuation>1</use_near_attenuation>
+          <use_far_attenuation>1</use_far_attenuation>
+          <near_attenuation_start>1</near_attenuation_start>
+          <near_attenuation_end>2</near_attenuation_end>
+          <far_attenuation_start>5</far_attenuation_start>
+          <far_attenuation_end>10</far_attenuation_end>
+        </technique>
+        <technique profile="FCOLLADA">
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0</quadratic_attenuation>
+          <falloff_angle>5</falloff_angle>
+          <falloff_exponent>1</falloff_exponent>
+          <intensity>0.9</intensity>
+          <outer_cone>5</outer_cone>
+        </technique>
+      </extra>
+    </light>
+    <light id="G__r__nt___Temelli_I____k__1" name="Görüntü_Temelli_Işık__0">
+      <technique_common>
+        <directional>
+          <color>0.1 0.1 0.1</color>
+        </directional>
+      </technique_common>
+      <extra>
+        <technique profile="FCOLLADA">
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0</quadratic_attenuation>
+          <falloff_angle>5</falloff_angle>
+          <falloff_exponent>1</falloff_exponent>
+          <intensity>1</intensity>
+          <outer_cone>5</outer_cone>
+        </technique>
+      </extra>
+      <extra type="adobe_light_type">
+        <technique profile="ADOBE">
+          <type>
+            <imageBased>1</imageBased>
+          </type>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="Katman_1.psd">
+      <init_from>./Katman%201.psd</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kPSDFile</dgnode_type>
+        </technique>
+      </extra>
+    </image>
+    <image id="Katman_1.psd1">
+      <init_from>./Katman%201.psd</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kPSDFile</dgnode_type>
+        </technique>
+      </extra>
+    </image>
+    <image id="Katman_1_Y__kseltme_Malzemesi_-_Varsay__lan_Doku.psd">
+      <init_from>./Katman%201%20Y%C3%BCkseltme%20Malzemesi%20-%20Varsay%C4%B1lan%20Doku.psd</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kPSDFile</dgnode_type>
+        </technique>
+      </extra>
+    </image>
+    <image id="Katman_1.psd2">
+      <init_from>./Katman%201.psd</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kPSDFile</dgnode_type>
+        </technique>
+      </extra>
+    </image>
+    <image id="Katman_1.psd3">
+      <init_from>./Katman%201.psd</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kPSDFile</dgnode_type>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Katman_1___n___i__irme_Malzemesi" name="Katman_1_Ön_Şişirme_Malzemesi">
+      <instance_effect url="#Katman_1___n___i__irme_Malzemesi-fx"/>
+    </material>
+    <material id="Katman_1___n_E__im_Malzemesi" name="Katman_1_Ön_Eğim_Malzemesi">
+      <instance_effect url="#Katman_1___n_E__im_Malzemesi-fx"/>
+    </material>
+    <material id="Katman_1_Y__kseltme_Malzemesi" name="Katman_1_Yükseltme_Malzemesi">
+      <instance_effect url="#Katman_1_Y__kseltme_Malzemesi-fx"/>
+    </material>
+    <material id="Katman_1_Geri_E__im_Malzemesi" name="Katman_1_Geri_Eğim_Malzemesi">
+      <instance_effect url="#Katman_1_Geri_E__im_Malzemesi-fx"/>
+    </material>
+    <material id="Katman_1_Geri___i__irme_Malzemesi" name="Katman_1_Geri_Şişirme_Malzemesi">
+      <instance_effect url="#Katman_1_Geri___i__irme_Malzemesi-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Katman_1___n___i__irme_Malzemesi-fx" name="Katman_1_Ön_Şişirme_Malzemesi">
+      <profile_COMMON>
+        <newparam sid="Katman_1_psd-surface">
+          <surface type="2D">
+            <init_from>Katman_1.psd</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Katman_1_psd-sampler">
+          <sampler2D>
+            <source>Katman_1_psd-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Katman_1_psd-sampler" texcoord="UVSET0">
+                <extra>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+                <extra type="texture_offset">
+                  <technique profile="ADOBE">
+                    <offsets>
+                      <offsetu>0.000004</offsetu>
+                      <offsetv>0.000006</offsetv>
+                      <scaleu>0.99999</scaleu>
+                      <scalev>0.999987</scalev>
+                      <angle>0</angle>
+                    </offsets>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+        <extra type="material_overlay">
+          <technique profile="ADOBE">
+            <colors>
+              <diffuse_color>0.5 0.5 0.5</diffuse_color>
+              <specular_color>0 0 0</specular_color>
+              <reflectivity_factor>0</reflectivity_factor>
+              <shininess>0</shininess>
+              <roughness>0.333333</roughness>
+            </colors>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>1</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Katman_1___n_E__im_Malzemesi-fx" name="Katman_1_Ön_Eğim_Malzemesi">
+      <profile_COMMON>
+        <newparam sid="Katman_1_psd1-surface">
+          <surface type="2D">
+            <init_from>Katman_1.psd1</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Katman_1_psd1-sampler">
+          <sampler2D>
+            <source>Katman_1_psd1-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Katman_1_psd1-sampler" texcoord="UVSET0">
+                <extra>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+                <extra type="texture_offset">
+                  <technique profile="ADOBE">
+                    <offsets>
+                      <offsetu>0.000004</offsetu>
+                      <offsetv>0.000006</offsetv>
+                      <scaleu>0.99999</scaleu>
+                      <scalev>0.999987</scalev>
+                      <angle>0</angle>
+                    </offsets>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+        <extra type="material_overlay">
+          <technique profile="ADOBE">
+            <colors>
+              <diffuse_color>0.5 0.5 0.5</diffuse_color>
+              <specular_color>0 0 0</specular_color>
+              <reflectivity_factor>0</reflectivity_factor>
+              <shininess>0</shininess>
+              <roughness>0.333333</roughness>
+            </colors>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>1</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Katman_1_Y__kseltme_Malzemesi-fx" name="Katman_1_Yükseltme_Malzemesi">
+      <profile_COMMON>
+        <newparam sid="Katman_1_Y__kseltme_Malzemesi_-_Varsay__lan_Doku_psd-surface">
+          <surface type="2D">
+            <init_from>Katman_1_Y__kseltme_Malzemesi_-_Varsay__lan_Doku.psd</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Katman_1_Y__kseltme_Malzemesi_-_Varsay__lan_Doku_psd-sampler">
+          <sampler2D>
+            <source>Katman_1_Y__kseltme_Malzemesi_-_Varsay__lan_Doku_psd-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Katman_1_Y__kseltme_Malzemesi_-_Varsay__lan_Doku_psd-sampler" texcoord="UVSET0">
+                <extra>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+                <extra type="texture_offset">
+                  <technique profile="ADOBE">
+                    <offsets>
+                      <offsetu>0</offsetu>
+                      <offsetv>0</offsetv>
+                      <scaleu>1</scaleu>
+                      <scalev>1</scalev>
+                      <angle>0</angle>
+                    </offsets>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+        <extra type="material_overlay">
+          <technique profile="ADOBE">
+            <colors>
+              <diffuse_color>0.5 0.5 0.5</diffuse_color>
+              <specular_color>0 0 0</specular_color>
+              <reflectivity_factor>0</reflectivity_factor>
+              <shininess>0</shininess>
+              <roughness>0.333333</roughness>
+            </colors>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>1</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Katman_1_Geri_E__im_Malzemesi-fx" name="Katman_1_Geri_Eğim_Malzemesi">
+      <profile_COMMON>
+        <newparam sid="Katman_1_psd2-surface">
+          <surface type="2D">
+            <init_from>Katman_1.psd2</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Katman_1_psd2-sampler">
+          <sampler2D>
+            <source>Katman_1_psd2-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Katman_1_psd2-sampler" texcoord="UVSET0">
+                <extra>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+                <extra type="texture_offset">
+                  <technique profile="ADOBE">
+                    <offsets>
+                      <offsetu>0.000004</offsetu>
+                      <offsetv>0.000006</offsetv>
+                      <scaleu>0.99999</scaleu>
+                      <scalev>0.999987</scalev>
+                      <angle>0</angle>
+                    </offsets>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+        <extra type="material_overlay">
+          <technique profile="ADOBE">
+            <colors>
+              <diffuse_color>0.5 0.5 0.5</diffuse_color>
+              <specular_color>0 0 0</specular_color>
+              <reflectivity_factor>0</reflectivity_factor>
+              <shininess>0</shininess>
+              <roughness>0.333333</roughness>
+            </colors>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>1</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Katman_1_Geri___i__irme_Malzemesi-fx" name="Katman_1_Geri_Şişirme_Malzemesi">
+      <profile_COMMON>
+        <newparam sid="Katman_1_psd3-surface">
+          <surface type="2D">
+            <init_from>Katman_1.psd3</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Katman_1_psd3-sampler">
+          <sampler2D>
+            <source>Katman_1_psd3-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Katman_1_psd3-sampler" texcoord="UVSET0">
+                <extra>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+                <extra type="texture_offset">
+                  <technique profile="ADOBE">
+                    <offsets>
+                      <offsetu>0.000004</offsetu>
+                      <offsetv>0.000006</offsetv>
+                      <scaleu>0.99999</scaleu>
+                      <scalev>0.999987</scalev>
+                      <angle>0</angle>
+                    </offsets>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+        <extra type="material_overlay">
+          <technique profile="ADOBE">
+            <colors>
+              <diffuse_color>0.5 0.5 0.5</diffuse_color>
+              <specular_color>0 0 0</specular_color>
+              <reflectivity_factor>0</reflectivity_factor>
+              <shininess>0</shininess>
+              <roughness>0.333333</roughness>
+            </colors>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>1</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Katman_2" name="Katman_1">
+      <mesh>
+        <source id="Katman_2-positions">
+          <float_array id="Katman_2-positions-array" count="84">0.0027 0.003112 0 222.502 222.498 0 0.0027 444.997 0 569.997 444.997 0 347.502 222.498 0 569.997 0.003112 0 0.0027 0.003112 0 0.0027 444.997 0 0.0027 0.003112 -444.994 0.0027 444.997 -444.994 0.0027 444.997 0 569.997 444.997 0 0.0027 444.997 -444.994 569.997 444.997 -444.994 569.997 444.997 0 569.997 0.003112 0 569.997 444.997 -444.994 569.997 0.003112 -444.994 569.997 0.003112 0 0.0027 0.003112 0 569.997 0.003112 -444.994 0.0027 0.003112 -444.994 0.0027 0.003112 -444.994 222.502 222.498 -444.994 0.0027 444.997 -444.994 569.997 444.997 -444.994 347.502 222.498 -444.994 569.997 0.003112 -444.994</float_array>
+          <technique_common>
+            <accessor source="#Katman_2-positions-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Katman_2-normals">
+          <float_array id="Katman_2-normals-array" count="84">0 0 0.998312 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -0.998312 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Katman_2-normals-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Katman_2-texcoords">
+          <float_array id="Katman_2-texcoords-array" count="56">0 0 0.390354 0.499995 0 1 1 1 0.609654 0.499995 1 0 1 1 0.780789 1 1 0 0.780789 0 0.780789 1 0.5 1 0.780789 0 0.5 0 0.5 1 0.280789 1 0.5 0 0.280789 0 0.280789 1 0 1 0.280789 0 0 0 0 0 0.390354 0.499995 0 1 1 1 0.609654 0.499995 1 0</float_array>
+          <technique_common>
+            <accessor source="#Katman_2-texcoords-array" count="28" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Katman_2-vertices">
+          <input semantic="POSITION" source="#Katman_2-positions"/>
+        </vertices>
+        <triangles material="Katman_1_Ön_Şişirme_Malzemesi" count="6">
+          <input semantic="VERTEX" source="#Katman_2-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Katman_2-normals" offset="0"/>
+          <input semantic="TEXCOORD" source="#Katman_2-texcoords" offset="0"/>
+          <p>2 0 1 4 3 1 5 3 4 0 5 1 2 1 3 4 1 5</p>
+        </triangles>
+        <triangles material="Katman_1_Ön_Eğim_Malzemesi" count="1">
+          <input semantic="VERTEX" source="#Katman_2-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Katman_2-normals" offset="0"/>
+          <input semantic="TEXCOORD" source="#Katman_2-texcoords" offset="0"/>
+          <p>0 0 0</p>
+        </triangles>
+        <triangles material="Katman_1_Yükseltme_Malzemesi" count="8">
+          <input semantic="VERTEX" source="#Katman_2-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Katman_2-normals" offset="0"/>
+          <input semantic="TEXCOORD" source="#Katman_2-texcoords" offset="0"/>
+          <p>8 6 7 8 7 9 12 10 11 12 11 13 16 14 15 16 15 17 20 18 19 20 19 21</p>
+        </triangles>
+        <triangles material="Katman_1_Geri_Eğim_Malzemesi" count="1">
+          <input semantic="VERTEX" source="#Katman_2-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Katman_2-normals" offset="0"/>
+          <input semantic="TEXCOORD" source="#Katman_2-texcoords" offset="0"/>
+          <p>0 0 0</p>
+        </triangles>
+        <triangles material="Katman_1_Geri_Şişirme_Malzemesi" count="6">
+          <input semantic="VERTEX" source="#Katman_2-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Katman_2-normals" offset="0"/>
+          <input semantic="TEXCOORD" source="#Katman_2-texcoords" offset="0"/>
+          <p>22 24 23 25 26 23 25 27 26 27 22 23 23 24 25 23 26 27</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="Sonsuz_I____k__0" name="Sonsuz_Işık__0" type="NODE">
+        <lookat>316.605 474.405 117.765 316.53 473.812 116.965 0 1 0</lookat>
+        <instance_light url="#Sonsuz_I____k__1"/>
+      </node>
+      <node id="G__r__nt___Temelli_I____k__0" name="Görüntü_Temelli_Işık__0" type="NODE">
+        <instance_light url="#G__r__nt___Temelli_I____k__1"/>
+      </node>
+      <node id="Katman_1" name="Katman_1" type="NODE">
+        <matrix>0.437377 0.292132 -0.850505 -378.887 0.181139 0.89776 0.401515 88.5226 0.880846 -0.329673 0.339743 -102.097 0 0 0 1</matrix>
+        <instance_geometry url="#Katman_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Katman_1_Ön_Şişirme_Malzemesi" target="#Katman_1___n___i__irme_Malzemesi"/>
+              <instance_material symbol="Katman_1_Ön_Eğim_Malzemesi" target="#Katman_1___n_E__im_Malzemesi"/>
+              <instance_material symbol="Katman_1_Yükseltme_Malzemesi" target="#Katman_1_Y__kseltme_Malzemesi"/>
+              <instance_material symbol="Katman_1_Geri_Eğim_Malzemesi" target="#Katman_1_Geri_E__im_Malzemesi"/>
+              <instance_material symbol="Katman_1_Geri_Şişirme_Malzemesi" target="#Katman_1_Geri___i__irme_Malzemesi"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra type="pivot_use">
+          <technique profile="ADOBE">
+            <use_pivot>
+              <needPivot>0</needPivot>
+            </use_pivot>
+          </technique>
+        </extra>
+      </node>
+      <extra type="render_settings">
+        <technique profile="ADOBE">
+          <faces>
+            <render_faces>1</render_faces>
+            <face_style>4</face_style>
+            <face_color>1 1 1</face_color>
+            <texture_type>0</texture_type>
+            <anti_alias_quality>1</anti_alias_quality>
+            <show_reflections>1</show_reflections>
+            <show_refractions>1</show_refractions>
+            <show_shadows>1</show_shadows>
+            <remove_backfaces>0</remove_backfaces>
+          </faces>
+          <edges>
+            <render_edges>0</render_edges>
+            <line_style>1</line_style>
+            <line_color>0 0 0</line_color>
+            <line_width>1</line_width>
+            <crease_value>0</crease_value>
+            <remove_backface_lines>0</remove_backface_lines>
+            <remove_hidden_lines>1</remove_hidden_lines>
+          </edges>
+          <vertices>
+            <render_vertices>0</render_vertices>
+            <vertex_style>1</vertex_style>
+            <vertex_color>0 0 0</vertex_color>
+            <vertex_radius>1</vertex_radius>
+            <remove_backface_vertices>0</remove_backface_vertices>
+            <remove_hidden_vertices>1</remove_hidden_vertices>
+          </vertices>
+          <volumes>
+            <render_volume>0</render_volume>
+            <volume_style>2097152</volume_style>
+            <transfer_function0/>
+            <transfer_function1/>
+            <transfer_function2/>
+            <transfer_function3/>
+            <gradient_enhancement>1</gradient_enhancement>
+            <opacity_scale>1</opacity_scale>
+          </volumes>
+          <stereo>
+            <render_stereo>0</render_stereo>
+            <stereo_style>16384</stereo_style>
+            <stereo_offset>5</stereo_offset>
+            <stereo_line_spacing>40</stereo_line_spacing>
+          </stereo>
+          <internal>
+            <projection>0</projection>
+            <blend_unlit>0</blend_unlit>
+          </internal>
+        </technique>
+      </extra>
+      <extra type="background_image_type">
+        <technique profile="ADOBE">
+          <type>
+            <image_type>0</image_type>
+          </type>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>
